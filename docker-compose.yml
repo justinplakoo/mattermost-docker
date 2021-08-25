@@ -7,7 +7,7 @@ services:
     read_only: true
     restart: unless-stopped
     volumes:
-      - /opt/data/containers/mattermost/db/var/lib/postgresql/data:/var/lib/postgresql/data
+      - /opt/data/containers/mattermost/db/13/data:/var/lib/postgresql/data
       - /etc/localtime:/etc/localtime:ro
     environment:
       - POSTGRES_USER=mmuser
